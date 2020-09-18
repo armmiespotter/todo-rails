@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="card">
+        <div class="card-header bg-primary text-white font-weight-bold">TODO LISTs - ADD</div>
+        <div class="card-body">
+          <% if notice%>
+          <div class="alert alert-primary" role="alert" id="notice"><%= notice %></div>
+          <% end %>
+          <p><strong>Name :</strong> <%= @todo.name %></p>
+        </div>
+        <div class="card-footer text-right">
+            <%= link_to 'Back', todos_path, class: 'btn btn-sm btn-primary' %>
+        </div>
+    </div>
+    <%= render 'credit' %>
+</div>
